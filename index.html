@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Parcial</title>
+</head>
+<body>
+
+    <h1>Actividades</h1>
+
+    <table border=" #b2b2b2 1px solid">
+        <tr style="color: blue;">
+            <td>Tarea</td>
+            <td >Estado</td>
+            <td>Fecha</td>
+            <td>Opcion</td>
+        </tr>
+    <tbody></tbody>
+    </table>
+    <br>
+    <br>
+    <button onclick="window.modal.showModal();">Agregar Actividad</button>
+
+    <dialog id="modal">
+    <h1>Nueva actividad</h1>
+    <label>Tarea</label>
+    <input></input>
+    <br>
+    <label for="Fecha">Fecha</label>
+    <input type="date" id="fecha" name="fecha">
+    <br>
+    <button id="Guardar">Guardar</button>
+    <br>
+    <button onclick="window.modal.close();">Cerrar</button>
+    </dialog>
+    
+    <script src="script.js"></script>
+</body>
+</html>
